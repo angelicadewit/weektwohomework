@@ -22,3 +22,11 @@ $desktop-breakpoint: 960px;
 @mixin bottom-padding{
     padding-bottom: 10px;
 }
+
+@mixin general-transition{
+    transition: .2s;
+}
+
+@mixin flex-display{
+    display: flex;
+}
