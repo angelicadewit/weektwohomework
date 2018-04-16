@@ -16,3 +16,7 @@ $desktop-breakpoint: 960px;
 @mixin border-radius{
     border-radius: .35em;
 }
+
+@mixin bottom-padding{
+    padding-bottom: 10px;
+}
