@@ -70,10 +70,9 @@ ul.nav{
 }
 
 .hero{
-	background: url(../img/soylutions.jpg);
-	background-size: cover;
+	background: url(../img/soylutions.jpg) no-repeat;
+	background-size:110%;
 	background-position-x: -30px;
-	// background-position-y: -166px;
 	color: #fff;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	padding: 7em 0;
@@ -81,6 +80,7 @@ ul.nav{
 	@include general-transition;
 
 	@include bp-desktop{
+		background-size: cover;
 		background-position-x: 0px;
 		background-position-y: -366px;
 	}
@@ -187,6 +187,10 @@ h4{
 	&:last-child{
 		@include bottom-padding;
 	}
+}
+
+ul.features{
+	align-self: center;
 }
 
 p:nth-child(6n) {  

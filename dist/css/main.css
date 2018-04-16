@@ -117,8 +117,8 @@ ul.nav a:last-child {
 }
 
 .hero {
-	background: url(../img/soylutions.jpg);
-	background-size: cover;
+	background: url(../img/soylutions.jpg) no-repeat;
+	background-size: 110%;
 	background-position-x: -30px;
 	color: #fff;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -129,6 +129,7 @@ ul.nav a:last-child {
 
 @media only screen and (min-width: 960px) {
 	.hero {
+		background-size: cover;
 		background-position-x: 0px;
 		background-position-y: -366px;
 	}
@@ -237,6 +238,10 @@ h4 {
 
 .features li:last-child {
 	padding-bottom: 10px;
+}
+
+ul.features {
+	align-self: center;
 }
 
 p:nth-child(6n) {
