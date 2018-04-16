@@ -85,6 +85,14 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	filter: blur(5px);
+}
+
+a.selected {
+	font-weight: bold;
+}
+
 h1 {
 	font-size: 2em;
 	padding-bottom: 10px;
@@ -95,23 +103,43 @@ h1 {
 	padding-bottom: 10px;
 }
 
+.nav li:last-child {
+	margin-bottom: 30px;
+}
+
 .hero {
-	background: #96B3D3;
+	background: #ccc;
 	color: #fff;
 	padding: 7em 0;
 	margin-bottom: 48px;
 }
 
 .col {
-	background: #96B3D3;
+	background: #ccc;
 	padding: 1em;
-	margin: 0 2em .8em;
+	margin: 0 2em 1.8em;
 	border-radius: .35em;
 	text-align: center;
 }
 
-.col:last-child {
-	margin-bottom: 30px;
+.special {
+	background: #96B3D3;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75), 0px 0px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
+.special h3, .special h4 {
+	text-decoration: underline overline;
+	font-size: 1.5em;
+}
+
+.special h4 {
+	text-decoration: none;
+}
+
+.special .button {
+	background-color: yellow;
+	color: black;
+	border: 1px solid black;
 }
 
 h2 {
@@ -129,6 +157,11 @@ h3, h4 {
 h4 {
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+.discount {
+	text-decoration: line-through;
+	padding-right: 10px;
 }
 
 .button {
