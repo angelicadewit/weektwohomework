@@ -110,7 +110,8 @@ ul.nav a:last-child {
 }
 
 @media only screen and (min-width: 960px) {
-	ul.nav a {
+	ul.nav {
+		display: flex;
 		margin-left: auto;
 	}
 }
@@ -142,7 +143,7 @@ ul.nav a:last-child {
 @media only screen and (min-width: 960px) {
 	.header {
 		display: flex;
-		padding: 0px 5.5em;
+		padding: 1em .5em 0em;
 		flex-direction: row;
 	}
 }

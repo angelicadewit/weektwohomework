@@ -60,9 +60,12 @@ ul.nav a{
 	&:last-child{
 		margin-bottom: 30px;
 	}
+}
 
+ul.nav{
 	@include bp-desktop{
-		margin-left: auto;
+		@include flex-display;
+		margin-left: auto
 	}
 }
 
@@ -92,7 +95,7 @@ ul.nav a{
 .header{
 	@include bp-desktop{
 		@include flex-display;
-		padding: 0px 5.5em;
+		padding: 1em .5em 0em;
 		flex-direction: row;
 	}
 }	
