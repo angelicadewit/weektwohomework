@@ -108,8 +108,11 @@ h1 {
 }
 
 .hero {
-	background: #ccc;
+	background: url(../img/soylutions.jpg);
+	background-size: cover;
+	background-position-x: -30px;
 	color: #fff;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	padding: 7em 0;
 	margin-bottom: 48px;
 }
@@ -143,7 +146,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -171,6 +174,12 @@ h4 {
 	color: #fff;
 	border-radius: .35em;
 	text-align: left;
+}
+
+.button:hover {
+	background: #FF5EAA;
+	transition: .2s;
+	filter: blur(0px);
 }
 
 .features li {
