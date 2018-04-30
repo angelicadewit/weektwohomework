@@ -114,6 +114,12 @@ ul.nav{
 	}
 }
 
+.order{
+	@include flex-display;
+	flex-direction: column;
+	flex: 1;
+}
+
 .special{
 	background: $special-color;
 	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75), 0px 0px 18px 3px rgba(0,0,0,0.75);
@@ -132,6 +138,24 @@ ul.nav{
 		color: black;
 		border: 1px solid black;
 	}
+}
+
+input{
+	margin-bottom: 15px;
+}
+
+select{
+	@extend input
+}
+
+textarea{
+	@extend input
+}
+
+label{
+	font-size: 1.2em;
+	text-align: left;
+	padding-bottom: 5px;
 }
 
 h2{
@@ -166,16 +190,20 @@ h4{
 	text-align: left;
 
 	&:hover{
-	background: $button-hover;
-	@include general-transition;
-	@include bp-desktop;
-	filter: blur(0px);
+		background: $button-hover;
+		@include general-transition;
+		@include bp-desktop;
+		filter: blur(0px);
 	}
 
 	@include bp-desktop{
 		align-self: flex-start;
 		margin-top: auto;
 	}
+}
+
+.submit{
+	text-align: center;
 }
 
 .features li{
@@ -196,5 +224,6 @@ ul.features{
 p:nth-child(6n) {  
 	@include bottom-padding;
 }
+
 
 
